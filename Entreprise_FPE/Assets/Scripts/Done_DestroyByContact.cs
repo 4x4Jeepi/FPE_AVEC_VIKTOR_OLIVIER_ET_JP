@@ -35,12 +35,19 @@ public class Done_DestroyByContact : MonoBehaviour
 
 		if (other.tag == "Player")
 		{
-			Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
-			gameController.GameOver();
+
+            Aura aura = other.GetComponent<Aura>();
+
+            if (!aura.m_IsActive) 
+            {
+                Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
+			    gameController.GameOver();
+                Destroy(other.gameObject);
+            }
 		}
 		
 		gameController.AddScore(scoreValue);
-		Destroy (other.gameObject);
-		Destroy (gameObject);
-	}
+		
+        Destroy(gameObject);
+    }
 }
