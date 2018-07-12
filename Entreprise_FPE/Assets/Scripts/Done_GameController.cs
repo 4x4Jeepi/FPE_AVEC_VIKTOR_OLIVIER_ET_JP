@@ -113,7 +113,8 @@ public class Done_GameController : MonoBehaviour {
         Vector3 spawnPosition = new Vector3(spawnValuesBoss.x, spawnValuesBoss.y, spawnValuesBoss.z);
         Quaternion spawnRotation = Quaternion.identity;
 
-        Instantiate(boss, spawnPosition, spawnRotation);
+        GameObject myBoss = Instantiate(boss, spawnPosition, spawnRotation);
 
+        myBoss.transform.localEulerAngles = new Vector3(0, 180, 0); 
     }
 }

@@ -241,14 +241,18 @@
     <Reference Include="UnityEditor.iOS.Extensions.Common">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
-    <Reference Include="TextMeshPro-2017.3-Runtime">
-      <HintPath>Assets\TextMesh Pro\Plugins\Editor DLL\TextMeshPro-2017.3-Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="TextMeshPro-2017.3-Editor">
       <HintPath>Assets\TextMesh Pro\Plugins\Editor DLL\TextMeshPro-2017.3-Editor.dll</HintPath>
     </Reference>
+    <Reference Include="TextMeshPro-2017.3-Runtime">
+      <HintPath>Assets\TextMesh Pro\Plugins\Editor DLL\TextMeshPro-2017.3-Runtime.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\OrbProject\Scripts\OrbControl.cs" />
+    <Compile Include="Assets\OrbProject\Scripts\ParticleScaler.cs" />
+    <Compile Include="Assets\Scripts\Aura.cs" />
+    <Compile Include="Assets\Scripts\Boss.cs" />
     <Compile Include="Assets\Scripts\Done_BGScroller.cs" />
     <Compile Include="Assets\Scripts\Done_DestroyByBoundary.cs" />
     <Compile Include="Assets\Scripts\Done_DestroyByContact.cs" />
@@ -259,7 +263,12 @@
     <Compile Include="Assets\Scripts\Done_PlayerController.cs" />
     <Compile Include="Assets\Scripts\Done_RandomRotator.cs" />
     <Compile Include="Assets\Scripts\Done_WeaponController.cs" />
+    <Compile Include="Assets\Scripts\Done_WeaponControllerBoss.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Manager\SoundManager\Demo\SoundManagerDemo.cs" />
+    <Compile Include="Assets\Scripts\Manager\SoundManager\SoundManager.cs" />
+    <Compile Include="Assets\Scripts\Manager\SoundManager\SoundManagerFPE.cs" />
+    <Compile Include="Assets\Scripts\Manager\SoundManager\SoundOnObject.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -295,6 +304,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\OrbProject\Readme.txt" />
+    <None Include="Assets\Scripts\Manager\SoundManager\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\LiberationSans - OFL.txt" />
